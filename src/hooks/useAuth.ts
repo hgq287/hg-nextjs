@@ -16,8 +16,11 @@ export const useAuth = () => {
       return res;
     } catch (err: any) {
       setError(err.message);
+      return null;
     } finally {
       setLoading(false);
     }
   };
+
+  return { signIn, loading, error };
 }

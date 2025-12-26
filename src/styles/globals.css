@@ -64,6 +64,20 @@ body {
   cursor: pointer;
 }
 
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #dc3545;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: rgba(220, 53, 69, 0.1);
+  border-radius: 4px;
+}
+
 .title {
   font-size: 24px;
   text-align: center;
